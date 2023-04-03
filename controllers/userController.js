@@ -36,5 +36,17 @@ module.exports = {
 // delete user
   deleteUser(req, res) {
     User.findOneAndDelete({ _id: req.params.userId })
+  },
+
+// add friend
+  addFriend(req, res) {
+    User.findOneAndUpdate({ _id: req.params.userId }, { $addToSet: { friends: req.params.friendId } }, { new: true })
+    .then((dbUserData) => res.json(dbUserData))
+  },
+// remove friend
+  removeFriend(req, res) {
+    User.findOneAndUpdate({ _id: req.params.userId }, { $pull: { friends: req.params.friendId } }, { new: true })
+    .then((dbUserData) => res.json(dbUserData))
   }
+
 };
