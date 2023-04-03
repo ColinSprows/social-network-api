@@ -3,7 +3,6 @@ const moment = require('moment');
 
 const reactionSchema = require('./Reaction');
 
-//  Define the shape of the documents within the collection.
 const thoughtSchema = new Schema(
     {
       thoughtText: {
