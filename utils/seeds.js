@@ -9,8 +9,18 @@ connection.once('open', async () => {
   await User.deleteMany({});
   await Thought.deleteMany({});
 
-  const users = [];
-  const thoughts = [];
+  const users = [
+    {
+        username: "Pete",
+        email: "peterpiper@gmail.com"
+    }
+  ];
+  const thoughts = [
+    {
+        thoughtTest: "imagine",
+        username: "Pete"
+    }
+  ];
 
   await User.collection.insertMany(users);
   await Video.collection.insertMany(thoughts);
