@@ -48,5 +48,4 @@ module.exports = {
     User.findOneAndUpdate({ _id: req.params.userId }, { $pull: { friends: req.params.friendId } }, { new: true })
     .then((dbUserData) => res.json(dbUserData))
   }
-
 };
