@@ -16,4 +16,8 @@ This project shows how to design an API for a social network using Mongoose obje
 
 ## Preview
 
+![image](/social-media-api-screenshot.png)
+
 ## Walkthrough Video
+
+[Link to video](https://drive.google.com/file/d/1FvwCNdDrFFSH5V1OkluFVUWL5IzUtgPI/view?usp=sharing)
