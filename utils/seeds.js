@@ -13,11 +13,15 @@ connection.once('open', async () => {
     {
         username: "Pete",
         email: "peterpiper@gmail.com"
+    },
+    {
+      username: "Tim",
+      email: "timtest@gmail.com"
     }
   ];
   const thoughts = [
     {
-        thoughtTest: "imagine",
+        thoughtText: "imagine",
         username: "Pete"
     }
   ];

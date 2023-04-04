@@ -36,6 +36,7 @@ module.exports = {
 // delete user
   deleteUser(req, res) {
     User.findOneAndDelete({ _id: req.params.userId })
+    .then(() => res.json({ message: 'User and associated thoughts deleted.' }))
   },
 
 // add friend
